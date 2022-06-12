@@ -1,14 +1,16 @@
 import React from "react";
 import "./header.scss";
 import CTA from "./CTA";
-import ME from "../../assets/me.png";
+import ME from "../../assets/img/me.png";
 import HeaderSocial from "./HeaderSocials";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
-        <h5>Hello i'am!</h5>
+        <h5>
+          Hello if (condition) {} else {}'am!
+        </h5>
         <h1>Victor Avalos</h1>
         <h5 className="text-light">Fullstack developer</h5>
         <CTA />
