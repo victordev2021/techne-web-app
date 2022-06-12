@@ -1,6 +1,12 @@
 .container{
     width: var(--container-width-lg);
     margin: 0 auto;
+    @media screen and(max-width: 1024px) {
+        width: var(--container-width-md);
+    }
+    @media screen and(max-width: 600px) {
+        width: var(--container-width-sm);
+    }
   }
   h1,h2,h3,h4,h5,h6{
     font-weight: 500;
@@ -10,6 +16,9 @@
   }
   section{
     margin-top: 8rem;
+    @media screen and(max-width: 1024px) {
+        margin-top: 6rem;
+    }
   }
   section > h2,
   section > h5{
@@ -19,6 +28,9 @@
   section > h2{
     color: var(--color-primary);
     margin-bottom: 3rem;
+    @media screen and(max-width: 600px) {
+        margin-bottom: 2rem;
+    }
   }
   .text-light{
     color: var(--color-light);
@@ -48,4 +60,9 @@
           background: var(--color-primary);
           color: var(--color-bg)ñ;
       }
+  }
+  img{
+      display: block;
+      width: 100%;
+      object-fit: cover;
   }
