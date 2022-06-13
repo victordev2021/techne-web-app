@@ -27,3 +27,18 @@ nav{
         }
     }
 }
+// ********* MEDIA QUERIES (MEDIUM DEVICES) *********
+@media screen and(max-width: 1024px) {
+    // nav{
+    //     gap: 1rem;
+    // }
+}
+// ********* MEDIA QUERIES (SMALL DEVICES) *********
+@media screen and(max-width: 600px) {
+    nav{
+        gap: .5rem;
+        a{
+            font-size: 1rem;
+        }
+    }
+}

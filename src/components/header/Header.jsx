@@ -8,9 +8,7 @@ const Header = () => {
   return (
     <header id="home">
       <div className="container header__container">
-        <h5>
-          Hello if (condition) {} else {}'am!
-        </h5>
+        <h5>Hello I'am!</h5>
         <h1>Victor Avalos</h1>
         <h5 className="text-light">Fullstack developer</h5>
         <CTA />
