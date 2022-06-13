@@ -1,16 +1,33 @@
 import React from "react";
 import "./portfolio.scss";
 
+import { data } from "../../assets/data/portfolio";
+
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h1>Portfolio</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quo
-        suscipit error illum, facilis a ipsum asperiores vero aspernatur,
-        consectetur deserunt autem, obcaecati expedita! Dolores earum quidem
-        aliquam itaque nihil.
-      </p>
+      <h5>My Recent Work</h5>
+      <h2>Portfolio</h2>
+      <div className="container portfolio__container">
+        {data.map(({ id, image, title, github, demo }) => {
+          return (
+            <article key={id} className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={image} alt="" />
+              </div>
+              <h3>{title}</h3>
+              <div className="portfolio__item-cta">
+                <a href={github} className="btn" target="_blank">
+                  Github
+                </a>
+                <a href={demo} className="btn btn-primary" target="_blank">
+                  Live Demo
+                </a>
+              </div>
+            </article>
+          );
+        })}
+      </div>
     </section>
   );
 };
